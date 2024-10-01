@@ -2,26 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.hero-gradient {
+  background: #FF416C;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FF4B2B, #FF416C);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
 }
